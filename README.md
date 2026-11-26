@@ -69,5 +69,39 @@ Toggle _showHelloWorld each time the button is clicked
 
 Use a ternary operator to pick the right text: 
 showHelloWorld ? "Hello World!" : "A basic display"
+
+### ex02  
+
+  Rewrite the UI with AppBar, two TextFields, and the button
+  grid:
+
+  - Display an AppBar at the top with the title "Calculator"
+  - Two TextFields both showing "0" (no logic yet, just
+  display)
+  - A grid of buttons:
+    - digits 0–9
+    - . for decimals
+    - AC to reset
+    - C to delete last character
+    - = for result
+    - operators: +, -, *, /
   
-### ex02
+  - Each button press prints its label to the debug console
+  - Must be responsive (phone, tablet, etc.)
+  
+
+### ex03
+
+  1. Add the math_expressions library to pubspec.yaml — this handles evaluating expressions like 1 + 2 * 3
+  -> flutter pub get
+  2. Replace the hardcoded "0" in the TextFields with actual state variables — _expression and _result
+  3. Wire up the buttons:
+    - Digits and operators append to _expression
+    - C deletes the last character
+    - AC clears everything
+    - = evaluates _expression and puts the result in _result
+  
+  4. Handle edge cases so the app never crashes:
+    - Invalid expression (e.g. 1 +)
+    - Division by zero
+    - Very large numbers

@@ -28,6 +28,18 @@ Rebuilding the iOS configuration:
   1. Click on Runner in the left sidebar
   2. Go to the Signing & Capabilities tab
 
+
+Sur votre Mac, choisissez le menu Pomme  > Réglages Système, puis cliquez sur « Confidentialité et sécurité »  dans la barre latérale. Vous devrez peut-être faire défiler la page vers le bas.
+
+Ouvrir les réglages « Confidentialité et sécurité »
+
+Accédez à Sécurité, puis cliquez sur Ouvrir.
+
+Cliquez sur « Ouvrir quand même ».
+
+Ce bouton s’affiche pendant environ une heure après que vous avez essayé d’ouvrir l’app.
+
+Saisissez votre mot de passe d’ouverture de session, puis cliquez sur OK.
   ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   Show it on a web browser:                                                                       
  

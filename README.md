@@ -49,3 +49,25 @@ Saisissez votre mot de passe d’ouverture de session, puis cliquez sur OK.
 
 
 ### ex01
+
+The key Dart/Flutter concept:
+  - StatelessWidget = never changes after being built
+  - StatefulWidget = can change and rebuild when you call setState()
+
+Convert HomePage to a StatefulWidget — this splits into two classes:
+    - HomePage (the widget itself)
+    - _HomePageState (holds the changing data)
+
+Add a boolean variable _showHelloWorld to track which text to display
+    - true → show "Hello World!"
+    - false → show "A basic display"
+
+Wrap the button's onPressed in setState() — this tells Flutter to
+rebuild the UI when the variable changes
+
+Toggle _showHelloWorld each time the button is clicked
+
+Use a ternary operator to pick the right text: 
+showHelloWorld ? "Hello World!" : "A basic display"
+  
+### ex02
